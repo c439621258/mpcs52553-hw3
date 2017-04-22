@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <title>hw3</title>
+    <%= csrf_meta_tags %>
+    <%= stylesheet_link_tag    'application', media: 'all' %>
+    <%= javascript_include_tag 'application' %>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="page-header">
+        <h1>
+            <%= link_to "Campus Landmarks", "/places" %>
+        </h1>
+      </div>
+    
+    <%= yield %>
+    </div>
+  </body>
+</html>

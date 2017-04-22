@@ -1,0 +1,31 @@
+
+<!-- set css in application.html -->
+<% places = Place.all %>
+<h2>
+  <%= link_to "New", "/places/new" %>
+</h2>
+<!-- display them in a loop -->
+<% places.each do |place|%>
+  <div class="row">
+    <div class="col-md-4">
+      <%= link_to image_tag(place.image_url, class:"img-responsive"), "/places/" + place.id.to_s %>
+    </div>
+    <div class="col-md-8">
+      <h3>
+        <%= link_to place.name, "/places/#{place.id.to_s}" %>
+      </h3>
+    </div>
+
+    <div class="col-md-8">
+      <h3>
+        <%= link_to "delete", "/places/#{place.id}", method:"delete" %>
+      </h3>
+    </div>
+
+    <div class="col-md-8">
+      <h3>
+        <%= link_to "edit", "/places/#{place.id}/edit" %>
+      </h3>
+    </div>
+  </div>
+<% end %>

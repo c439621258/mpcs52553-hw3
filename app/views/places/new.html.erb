@@ -1,0 +1,27 @@
+<%= form_tag "/places" do %>
+<p>
+
+  <%= label_tag "Place name" %>
+  <%= text_field_tag "name" %>
+  
+</p>
+
+<p>
+
+  <%= label_tag "Place image url" %>
+  <%= text_field_tag "image_url" %>
+  
+</p>
+
+<p>
+
+  <%= label_tag "Description" %>
+  <%= text_field_tag "desc" %>
+  
+</p>
+
+<p>
+  <%= submit_tag "Submit" %>
+</p>
+
+<% end %>
