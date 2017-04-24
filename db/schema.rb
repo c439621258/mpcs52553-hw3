@@ -15,7 +15,7 @@ ActiveRecord::Schema.define(version: 0) do
   create_table "places", force: :cascade do |t|
     t.string "name"
     t.string "image_url"
-    t.string "desc"
+    t.text   "desc"
   end
 
 end

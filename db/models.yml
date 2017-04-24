@@ -1,7 +1,7 @@
 Place
   name: string
   image_url: string
-  desc: string
+  desc: text
 
 
 # Example table for a typical Book model.
